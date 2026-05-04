@@ -1,0 +1,24 @@
+services:
+  mysql-db:
+    image: mysql:8.3
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: mysqlpassword@9
+      MYSQL_DATABASE: rest_assured_db
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pmysqlpassword@9"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  api-tests:
+    build: .
+    depends_on:
+      mysql-db:
+        condition: service_healthy
+    environment:
+      - DB_URL=jdbc:mysql://mysql-db:3306/rest_assured_db?allowPublicKeyRetrieval=true&useSSL=false&autoReconnect=true
+      - DB_USERNAME=root
+      - DB_PASSWORD=mysqlpassword@9

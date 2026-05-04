@@ -1,0 +1,7 @@
+base\BaseTest.class
+base\Routes.class
+utils\ConfigReader.class
+pojo\Post.class
+utils\UserEndpoints.class
+pojo\User.class
+utils\ApiUtils.class

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-27T13:24:27 IST" name="Default suite" finished-at="2026-04-27T13:24:34 IST" duration-ms="7755">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.options.TestRunner@7770f470]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-27T13:24:27 IST" name="Default test" finished-at="2026-04-27T13:24:34 IST" duration-ms="7755">
+      <class name="cucumber.options.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.options.TestRunner@7770f470]" started-at="2026-04-27T13:24:27 IST" name="setUpClass" finished-at="2026-04-27T13:24:28 IST" duration-ms="1086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@42d7e8bc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.options.TestRunner@7770f470]" started-at="2026-04-27T13:24:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:24:34 IST" duration-ms="5930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Create and Read User with Database Validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Management API Operations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.options.TestRunner@7770f470]" started-at="2026-04-27T13:24:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:24:34 IST" duration-ms="579" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify 404 error for non-existent user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Management API Operations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.options.TestRunner@7770f470]" started-at="2026-04-27T13:24:34 IST" name="tearDownClass" finished-at="2026-04-27T13:24:34 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.options.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
